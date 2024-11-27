@@ -1,0 +1,138 @@
+/* General Reset */
+body, h1, p, ul, ol, li, button, table {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body and General Styling */
+body {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.8; /* Slightly improved readability */
+    background-color: #f9f9f9;
+    padding: 0 20px;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Header Section */
+#ylaosa {
+    text-align: center;
+    padding: 20px 15px;
+    background-color: #004080; /* Deep blue */
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow for better contrast */
+}
+
+#ylaosa img {
+    max-width: 120px; /* Scaled down slightly for balance */
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle depth to the image */
+}
+
+/* Content Section */
+#dataosa {
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 25px; /* Increased padding for better spacing */
+    border-radius: 10px; /* Softer rounded edges */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow for better emphasis */
+}
+
+/* Dropdown Styling */
+#toimialat {
+    width: 100%;
+    padding: 12px; /* Slightly larger for improved clickability */
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px; /* More rounded edges for modern UI */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#toimialat:focus {
+    border-color: #004080; /* Blue border on focus */
+    box-shadow: 0 0 6px rgba(0, 64, 128, 0.2); /* Highlight effect */
+}
+
+/* Button Styling */
+#haenappula {
+    padding: 12px 25px; /* Larger padding for better usability */
+    font-size: 16px;
+    color: #fff;
+    background-color: #004080;
+    border: none;
+    border-radius: 6px; /* Softer edges */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#haenappula:hover {
+    background-color: #0066cc; /* Slightly brighter blue */
+    transform: scale(1.05); /* Subtle zoom effect */
+}
+
+#haenappula:active {
+    background-color: #003366; /* Darker shade on click */
+    transform: scale(0.98); /* Slightly pressed effect */
+}
+
+/* Table Styling */
+#yritykset {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+#yritykset thead th {
+    background-color: #004080;
+    color: #fff;
+    padding: 12px; /* Improved spacing */
+    text-align: left;
+    font-weight: bold;
+}
+
+#yritykset tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Alternating row colors */
+}
+
+#yritykset th,
+#yritykset td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+#yritykset tbody tr:hover {
+    background-color: #e6f3ff; /* Highlight row on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    #dataosa {
+        padding: 20px;
+    }
+
+    #haenappula {
+        width: 100%; /* Full-width button for small screens */
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #toimialat {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #yritykset thead th,
+    #yritykset td {
+        font-size: 14px; /* Slightly smaller font for compactness */
+    }
+}
